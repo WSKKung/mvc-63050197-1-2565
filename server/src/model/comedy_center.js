@@ -1,7 +1,7 @@
 import fs from "node:fs"
-import { parse as parseFromCSV, stringify as stringifyCSV } from "csv"
-import { randomRange } from "../util/rand.js"
+import { parse as parseFromCSV } from "csv"
 
+// Path to comedy center data file
 const filePath = "./src/data/comedy_center.csv"
 
 class ComedyCenter {
@@ -43,6 +43,7 @@ class ComedyCenter {
 
 }
 
+// Read Comedy Centers data from .csv file
 async function readFromFile() {
 	
 	return new Promise((resolve, reject) => {
