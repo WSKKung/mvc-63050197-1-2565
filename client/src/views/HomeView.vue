@@ -97,7 +97,7 @@ export default {
 		submitForm() {
 			if (this.formValid) {
 				let signedLatitude = this.latitude.toFixed(2) * this.latitudeSign
-				let signedLongtitude = this.longtitude.toFixed(2) * this.longtitudeSign
+				let signedLongtitude = this.longtitude * this.longtitudeSign
 				this.$store.dispatch("fetchNearestComedyCenter", {
 					latitude: signedLatitude,
 					longtitude: signedLongtitude
